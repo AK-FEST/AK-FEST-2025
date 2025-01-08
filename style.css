@@ -311,6 +311,22 @@ html {
     scroll-behavior: smooth; /* Mengaktifkan smooth scrolling */
 }
 
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburger span {
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+}
 
 /* Media query untuk perangkat dengan lebar layar 600px atau lebih kecil (handphone) */
 @media screen and (max-width: 600px) {
@@ -320,13 +336,24 @@ html {
     }
 
     .menu ul {
-        flex-direction: column; /* Menu menjadi vertikal */
-        gap: 10px; /* Jarak antar item menu */
+        display: none; /* Sembunyikan menu secara default */
+        flex-direction: column; /* Vertikal */
+        gap: 10px;
     }
 
+    .hamburger {
+        display: flex;
+    }
+
+    .menu.active ul {
+        display: flex; /* Tampilkan menu ketika tombol hamburger diklik */
+    }
+
+
     nav ul li a {
-        font-size: 16px; /* Ukuran font lebih kecil */
-        padding: 10px 15px; /* Jarak antara item menu lebih besar */
+        font-size: 18px; /* Menyesuaikan ukuran font untuk menu di perangkat kecil */
+        padding: 10px 15px;
+    }
     }
 
     /* Gambar pada section image */
