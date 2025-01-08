@@ -1,0 +1,412 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans',sans-serif;
+}
+
+.wrapper {
+    max-width: 1100px; /* Batas maksimum lebar */
+    width: 100%; /* Fleksibel dengan lebar layar */
+    margin: auto;
+    position: relative;
+}
+
+.logo a {
+    font-size: 50px;
+    font-weight: 800px;
+    float: left;
+    font-family: 'Open Sans';
+    color: #ffffff;
+}
+
+.menu {
+    float: right;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    line-height: 80px;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    background: transparent;
+}
+
+nav.scrolled {
+    background: rgb(124, 26, 124); /* Black background after scrolling */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px;
+    transition: color 0.3s ease;
+}
+
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.image {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full screen height */
+    overflow: hidden;
+    margin: 0; /* No margin around the image */
+    padding: 0;
+}
+
+.gambar {
+    width: 100%; /* Gambar akan menyesuaikan lebar kontainer */
+    height: auto; /* Menjaga rasio aspek gambar */
+    display: block;
+    margin: 0 auto; /* Menengahkan gambar */
+}
+
+section {
+    padding: 60px 20px;
+}
+
+#perlombaan h2 {
+    width: 100%; /* Heading menempati satu baris penuh */
+    text-align: center; /* Menengahkan teks */
+    margin-bottom: 20px; /* Memberikan jarak antara heading dan gambar */
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#perlombaan .wrapper {
+    display: flex; /* Gunakan Flexbox */
+    flex-wrap: wrap; /* Bungkus ke baris baru jika tidak muat */
+    justify-content: space-between; /* Jarak rata antara gambar */
+    gap: 10px; /* Jarak antar gambar */
+    text-align: center; /* Teks tetap di tengah */
+}
+
+#perlombaan .wrapper a {
+    text-decoration: none; /* Hilangkan garis bawah link */
+}
+
+#perlombaan .wrapper img {
+    width: 150px; /* Lebar setiap gambar */
+    height: auto; /* Menjaga rasio aspek gambar */
+    object-fit: cover; /* Memastikan gambar sesuai */
+    border: 1px solid #ddd; /* Tambahkan border untuk estetika */
+    border-radius: 8px; /* Sudut gambar melengkung */
+}
+
+#perlombaan .wrapper a img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efek transisi halus */
+}
+
+#perlombaan .wrapper a:hover img {
+    transform: scale(1.1); /* Perbesar gambar saat di-hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Tambahkan bayangan */
+}
+
+.futsal-header {
+    background-color: rgb(124, 26, 124); /* Menetapkan latar belakang solid berwarna gelap */
+    box-shadow: none; /* Menghilangkan shadow jika ada */
+}
+
+.futsal-header .logo a {
+    font-size: 50px;
+    font-weight: 800px;
+    float: left;
+    font-family: 'Open Sans';
+    color: #ffffff;
+}
+
+.futsal-header .menu ul li a {
+    color: #ffffff; /* Warna putih untuk teks menu */
+    font-family: 'Open Sans', sans-serif; /* Font yang sama dengan AK-FEST */
+    font-weight: bold;
+    text-align: center;
+}
+
+.futsal-header .menu ul li a:hover {
+    text-decoration: underline;
+    color: #f0f0f0; /* Warna teks menu saat hover */
+}
+
+#futsal-home {
+    display: flex;
+    justify-content: center; /* Menengahkannya secara horizontal */
+    align-items: center; /* Menengahkannya secara vertikal */
+    padding: 100px 20px 20px;
+}
+
+#futsal-home img {
+    max-width: 70%; /* Membatasi lebar gambar menjadi 70% dari kontainer */
+    height: auto; /* Menjaga rasio aspek gambar */
+    display: block;
+    margin: 0 auto; /* Menjaga gambar tetap terpusat jika ada margin */
+}
+
+.futsal-register {
+    text-align: center;
+    margin-top: 20px; /* Jarak dari gambar */
+}
+
+.futsal-register h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.register-link {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: rgb(124, 26, 124); /* Warna tombol */
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.register-link:hover {
+    background-color: #0056b3; /* Warna saat hover */
+}
+
+footer {
+    background-color: rgb(124, 26, 124); 
+    color: #ffffff; 
+    text-align: center; 
+    padding: 1rem 0; 
+    margin-top: 2rem;
+}
+
+footer .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer p {
+    margin: 0; 
+    font-size: 0.9rem; 
+}
+
+footer .social-media {
+    list-style: none; 
+    padding: 0;
+    display: flex;
+    gap: 1rem; 
+}
+
+footer .social-media li {
+    display: inline; 
+}
+
+footer .social-media a {
+    color: #fff; 
+    text-decoration: none; 
+    font-weight: bold; 
+    transition: color 0.3s ease; 
+}
+
+footer .social-media a:hover {
+    color: #fe8402;
+}
+
+#Dokumentasi h2 {
+    width: 100%; /* Heading menempati satu baris penuh */
+    text-align: center; /* Menengahkan teks */
+    margin-bottom: 20px; /* Memberikan jarak antara heading dan gambar */
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.slider {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    flex: 0 0 100%; /* Setiap slide memenuhi 100% lebar kontainer */
+    overflow: hidden; /* Gambar yang lebih besar akan dipotong */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Menjaga gambar tetap terpusat */
+}
+
+.slide img {
+    width: 100%;
+    height: 600px; /* Tetapkan tinggi tetap untuk gambar */
+    object-fit: cover; /* Memastikan gambar tetap terpotong dan proporsional */
+}
+
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slider-container {
+    width: 100%; /* Sesuaikan lebar slider dengan elemen induk */
+    max-width: 800px; /* Batas maksimum lebar slider */
+    overflow: hidden; /* Sembunyikan bagian gambar di luar area slider */
+    margin: auto; /* Pusatkan slider di halaman */
+}
+
+html {
+    scroll-behavior: smooth; /* Mengaktifkan smooth scrolling */
+}
+
+
+/* Media query untuk perangkat dengan lebar layar 600px atau lebih kecil (handphone) */
+@media screen and (max-width: 600px) {
+    /* Gaya untuk header */
+    .logo a {
+        font-size: 30px; /* Lebih kecil di layar kecil */
+    }
+
+    .menu ul {
+        flex-direction: column; /* Menu menjadi vertikal */
+        gap: 10px; /* Jarak antar item menu */
+    }
+
+    nav ul li a {
+        font-size: 16px; /* Ukuran font lebih kecil */
+        padding: 10px 15px; /* Jarak antara item menu lebih besar */
+    }
+
+    /* Gambar pada section image */
+    .image img {
+        height: auto; /* Biarkan gambar menyesuaikan tinggi */
+    }
+
+    /* Perubahan pada wrapper dan layout gambar */
+    #perlombaan .wrapper {
+        flex-direction: column; /* Gambar ditampilkan secara vertikal */
+        align-items: center; /* Gambar ditempatkan di tengah */
+    }
+
+    #perlombaan .wrapper img {
+        width: 100%; /* Gambar mengambil seluruh lebar kontainer */
+        height: auto; /* Menjaga rasio aspek */
+        margin-bottom: 15px; /* Memberikan jarak antar gambar */
+    }
+
+    /* Dokumentasi slider */
+    .slider {
+        flex-direction: column; /* Slider ditampilkan secara vertikal */
+        align-items: center; /* Gambar di tengah */
+    }
+
+    .slide img {
+        height: auto; /* Gambar mengikuti rasio aspek */
+        width: 100%; /* Gambar menyesuaikan lebar layar */
+    }
+
+    /* Menyesuaikan ukuran font untuk judul */
+    #perlombaan h2,
+    #Dokumentasi h2 {
+        font-size: 28px; /* Ukuran font lebih kecil */
+    }
+
+    /* Footer */
+    footer {
+        padding: 1rem; /* Memberikan padding yang lebih kecil */
+    }
+
+    footer .social-media {
+        gap: 0.5rem; /* Mengurangi jarak antar icon sosial media */
+    }
+
+    footer .social-media li a {
+        font-size: 14px; /* Ukuran font lebih kecil */
+    }
+}
+
+/* Media query untuk perangkat lebih besar dari 600px (tablet dan desktop) */
+@media screen and (min-width: 601px) {
+    /* Gaya untuk header */
+    .logo a {
+        font-size: 50px;
+    }
+
+    .menu ul {
+        display: flex;
+        gap: 20px;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+    }
+
+    /* Gambar pada section image */
+    .image img {
+        height: 100vh; /* Gambar mengisi seluruh layar */
+    }
+
+    /* Gambar di section perlombaan */
+    #perlombaan .wrapper {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    /* Slider gambar dokumentasi */
+    .slide img {
+        height: 600px; /* Menjaga tinggi gambar tetap konsisten */
+        object-fit: cover;
+    }
+}

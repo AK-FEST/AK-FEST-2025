@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AK-FEST 2025</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="wrapper">
+            <div class="logo"><a href="">AK-FEST 2025</a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#perlombaan">Perlombaan</a></li>
+                    <li><a href="#Dokumentasi">Dokumentasi</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="wrapper">
+        <section id="home" class="image">
+            <img src="web kuning_20250104_194523_0000.png" alt="AK-FEST 2025">
+        </section>
+        <section>
+            <img src="WhatsApp Image 2025-01-08 at 11.59.01.jpeg" alt="Gambar Tambahan" class="gambar">
+        </section>
+        <section id="perlombaan">
+            <div class="wrapper">
+                <h2>Perlombaan</h2>
+                <a href="futsal.html">
+                    <img src="futsal.png" alt="Futsal">
+                </a>
+                <a href="badminton.html">
+                    <img src="badminton.png" alt="Badminton">
+                </a>
+                <a href="fashion_design.html">
+                    <img src="fashion design.png" alt="Fashion Design">
+                </a>
+                <a href="design_batik.html">
+                    <img src="design batik.png" alt="Design Batik">
+                </a>
+                <a href="solo_song.html">
+                    <img src="solo song.png" alt="Solo Song">
+                </a>
+            </div>
+        </section>
+        <section id="Dokumentasi">
+            <div class="wrapper">
+                <h2>Dokumentasi</h2>
+        <div class="slider">
+            <div class="slides">
+                <div class="slide"><img src="WhatsApp Image 2025-01-09 at 00.45.23.jpeg" alt="Dokumentasi 1"></div>
+                <div class="slide"><img src="WhatsApp Image 2025-01-09 at 00.46.jpeg" alt="Dokumentasi 2"></div>
+                <div class="slide"><img src="WhatsApp Image 2025-01-09 at 00.45.25.jpeg" alt="Dokumentasi 3"></div>
+                <div class="slide"><img src="WhatsApp Image 2025-01-09 at 00.48.46.jpeg" alt="Dokumentasi 4"></div>
+                <div class="slide"><img src="WhatsApp Image 2025-01-09 at 01.06.12.jpeg" alt="Dokumentasi 5"></div>
+                <div class="slide"><img src="WhatsApp Image 2025-01-09 at 01.08.32.jpeg" alt="Dokumentasi 6"></div>
+            </div>
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+        </div>
+            </div>
+        </section>
+        <footer>
+            <div class="wrapper">
+                <p>&copy; 2025 AK-FEST | All Rights Reserved.</p>
+                <ul class="social-media">
+                    <li><a href="https://www.instagram.com/akfest_?igsh=NG9rdndjcDUxMWNy">Instagram</a></li>
+                    <li><a href="https://www.tiktok.com/@bem_aktekstil?_t=8se4MbvRC59&_r=1">Tiktok</a></li>
+                </ul>
+                <p><strong>CP:085740058784 (Intan)</strong></p>
+            </div>   
+        </footer>
+        
+        <script src="script.js"></script>
+    </div>
+    <script>
+        const slides = document.querySelector('.slides');
+        const slide = document.querySelectorAll('.slide');
+        const prevButton = document.querySelector('.prev');
+        const nextButton = document.querySelector('.next');
+    
+        let index = 0;
+    
+        function showSlide(idx) {
+            const totalSlides = slide.length;
+            if (idx >= totalSlides) index = 0; // Kembali ke slide pertama
+            if (idx < 0) index = totalSlides - 1; // Kembali ke slide terakhir
+            slides.style.transform = `translateX(${-index * 100}%)`;
+        }
+    
+        prevButton.addEventListener('click', () => {
+            index--;
+            showSlide(index);
+        });
+    
+        nextButton.addEventListener('click', () => {
+            index++;
+            showSlide(index);
+        });
+    </script>
+    
+</body>
+</html>
