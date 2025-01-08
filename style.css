@@ -342,7 +342,14 @@ html {
     }
 
     .hamburger {
-        display: flex;
+       display: flex;
+        flex-direction: column;
+        justify-content: space-evenly; /* Mengatur jarak antara garis titik 3 agar rata */
+        width: 25px;
+        height: 20px;
+        cursor: pointer;
+        padding: 0; /* Menghapus padding tambahan */
+        margin: 0; /* Menghapus margin agar titik 3 rata */
     }
 
     .menu.active ul {
