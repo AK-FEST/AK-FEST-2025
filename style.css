@@ -335,10 +335,41 @@ html {
         font-size: 30px; /* Lebih kecil di layar kecil */
     }
 
+    .menu .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%); /* Menengahkan secara vertikal */
+        right: 20px; /* Jarak dari kanan */
+        padding: 10px;
+    }
+
     .menu ul {
-        display: none; /* Sembunyikan menu secara default */
-        flex-direction: column; /* Vertikal */
-        gap: 10px;
+        display: none; /* Sembunyikan menu secara default pada tampilan kecil */
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: #4f4f4f; /* Warna background menu */
+        width: 100%;
+        text-align: center;
+        z-index: 9;
+
+        .menu ul li {
+        display: block;
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .menu ul li a {
+        color: white;
+        font-size: 18px;
+        padding: 10px 0;
+        display: block;
+    }
+
+    .menu ul li a:hover {
+        background-color: #333; /* Warna latar saat hover */
+    }
     }
 
     .hamburger {
@@ -364,9 +395,22 @@ html {
     }
 
     /* Gambar pada section image */
+    @media screen and (max-width: 600px) {
+    /* Mengurangi jarak antar gambar */
     .image img {
-        height: auto; /* Biarkan gambar menyesuaikan tinggi */
+        margin-bottom: 10px; /* Atur margin bawah agar lebih kecil */
     }
+
+    .image {
+        margin-bottom: 10px; /* Pastikan wrapper gambar juga tidak terlalu jauh */
+    }
+
+    /* Gambar tambahan */
+    section img {
+        margin-top: 10px; /* Menambahkan margin atas pada gambar tambahan */
+    }
+}
+
 
     /* Perubahan pada wrapper dan layout gambar */
     #perlombaan .wrapper {
