@@ -335,31 +335,6 @@ html {
         font-size: 30px; /* Lebih kecil di layar kecil */
     }
 
-    .menu .menu-toggle {
-        display: block;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%); /* Menengahkan secara vertikal */
-        right: 20px; /* Jarak dari kanan */
-        padding: 10px;
-    }
-
-    .menu ul {
-        display: none; /* Sembunyikan menu secara default pada tampilan kecil */
-        position: absolute;
-        top: 100%;
-        right: 0;
-        background: #4f4f4f; /* Warna background menu */
-        width: 100%;
-        text-align: center;
-        z-index: 9;
-
-        .menu ul li {
-        display: block;
-        padding: 10px;
-        border-bottom: 1px solid #ddd;
-    }
-
     .menu ul li a {
         color: white;
         font-size: 18px;
