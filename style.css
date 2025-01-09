@@ -320,10 +320,13 @@ html {
     height: 30px;
     justify-content: space-between;
     align-items: center;
-    margin-top: 5px;
-    margin-bottom: 5px;
 }
 
+.hamburger span {
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+}
 
 /* Media query untuk perangkat dengan lebar layar 600px atau lebih kecil (handphone) */
 @media screen and (max-width: 600px) {
@@ -332,27 +335,14 @@ html {
         font-size: 30px; /* Lebih kecil di layar kecil */
     }
 
-    .menu ul li a {
-        color: white;
-        font-size: 18px;
-        padding: 10px 0;
-        display: block;
-    }
-
-    .menu ul li a:hover {
-        background-color: #333; /* Warna latar saat hover */
-    }
+    .menu ul {
+        display: none; /* Sembunyikan menu secara default */
+        flex-direction: column; /* Vertikal */
+        gap: 10px;
     }
 
     .hamburger {
-       display: flex;
-        flex-direction: column;
-        justify-content: space-evenly; /* Mengatur jarak antara garis titik 3 agar rata */
-        width: 25px;
-        height: 20px;
-        cursor: pointer;
-        padding: 0; /* Menghapus padding tambahan */
-        margin: 0; /* Menghapus margin agar titik 3 rata */
+        display: flex;
     }
 
     .menu.active ul {
@@ -367,22 +357,9 @@ html {
     }
 
     /* Gambar pada section image */
-    @media screen and (max-width: 600px) {
-    /* Mengurangi jarak antar gambar */
     .image img {
-        margin-bottom: 10px; /* Atur margin bawah agar lebih kecil */
+        height: auto; /* Biarkan gambar menyesuaikan tinggi */
     }
-
-    .image {
-        margin-bottom: 10px; /* Pastikan wrapper gambar juga tidak terlalu jauh */
-    }
-
-    /* Gambar tambahan */
-    section img {
-        margin-top: 10px; /* Menambahkan margin atas pada gambar tambahan */
-    }
-}
-
 
     /* Perubahan pada wrapper dan layout gambar */
     #perlombaan .wrapper {
