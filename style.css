@@ -324,6 +324,7 @@ html {
     .image {
         margin-bottom: 20px; /* Mengurangi jarak bawah elemen dengan class image */
         margin-top: 10px;
+        height: auto;
     }
 
     .gambar {
@@ -331,7 +332,7 @@ html {
     }
     
     section {
-    padding: 10px 20px;
+    padding: `30px 20px;
     }
 }
 
