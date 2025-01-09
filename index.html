@@ -10,6 +10,11 @@
     <nav id="navbar">
         <div class="wrapper">
             <div class="logo"><a href="">AK-FEST 2025</a></div>
+            <div class="hamburger-menu" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
             <div class="menu">
                 <ul>
                     <li><a href="#home">Home</a></li>
@@ -100,6 +105,11 @@
             index++;
             showSlide(index);
         });
+
+        function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    menu.classList.toggle('active');
+}
     </script>
 
 </body>
