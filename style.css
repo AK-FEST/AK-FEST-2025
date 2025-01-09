@@ -323,7 +323,7 @@ html {
 @media (max-width: 768px) {
     .image {
         margin-bottom: 20px; /* Mengurangi jarak bawah elemen dengan class image */
-        margin-top: 80px;
+        margin-top: 90px;
     }   /* Gambar pada section image */
     
     .image img {
@@ -332,7 +332,7 @@ html {
 
     .gambar {
         margin-top: 10px; /* Mengurangi jarak atas elemen dengan class gambar */
-        width: 100vh;
+        padding: 0;
     }
     
     section {
