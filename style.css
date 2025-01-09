@@ -303,19 +303,6 @@ html {
     scroll-behavior: smooth; /* Mengaktifkan smooth scrolling */
 }
 
-#navbar {
-    position: relative;
-    background-color: #4CAF50; /* Sesuaikan dengan warna header */
-    padding: 10px 20px;
-}
-
-.wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
 @media (max-width: 768px) {
     .menu {
         display: none;
