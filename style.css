@@ -320,6 +320,17 @@ html {
     background-color: #fff;
 }
 
+@media (max-width: 768px) {
+    .image {
+        margin-bottom: 10px; /* Mengurangi jarak bawah elemen dengan class image */
+        margin-top: 10px;
+    }
+
+    .gambar {
+        margin-top: 10px; /* Mengurangi jarak atas elemen dengan class gambar */
+    }
+}
+
 /* Media query untuk perangkat dengan lebar layar 600px atau lebih kecil (handphone) */
 @media screen and (max-width: 600px) {
     /* Gaya untuk header */
