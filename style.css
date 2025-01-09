@@ -303,8 +303,65 @@ html {
     scroll-behavior: smooth; /* Mengaktifkan smooth scrolling */
 }
 
+#navbar {
+    position: relative;
+    background-color: #4CAF50; /* Sesuaikan dengan warna header */
+    padding: 10px 20px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 
 @media (max-width: 768px) {
+    .menu {
+        display: none;
+        position: absolute;
+        top: 50px; /* Posisi menu di bawah navbar */
+        right: 0;
+        background-color: #4CAF50; /* Warna latar belakang menu */
+        width: 100%;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .menu.active {
+        display: block; /* Tampilkan menu ketika aktif */
+    }
+
+    .hamburger-menu {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 15px; /* Posisi dari atas */
+        right: 20px; /* Posisi dari kanan */
+    }
+
+    .hamburger-menu span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 5px 0;
+    }
+
+    .menu ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .menu ul li {
+        padding: 10px 0;
+    }
+
+    .menu ul li a {
+        color: white;
+        text-decoration: none;
+    }
+
     .image {
         margin-bottom: 20px; /* Mengurangi jarak bawah elemen dengan class image */
         margin-top: 90px;
