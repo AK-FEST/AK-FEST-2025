@@ -309,7 +309,7 @@ html {
         position: absolute;
         top: 50px; /* Posisi menu di bawah navbar */
         right: 0;
-        background-color: #4CAF50; /* Warna latar belakang menu */
+        background-color: rgb(124, 26, 124); /* Warna latar belakang menu */
         width: 100%;
         text-align: center;
         padding-top: 10px;
@@ -323,7 +323,7 @@ html {
         display: block;
         cursor: pointer;
         position: absolute;
-        top: 15px; /* Posisi dari atas */
+        top: 20px; /* Posisi dari atas */
         right: 20px; /* Posisi dari kanan */
     }
 
