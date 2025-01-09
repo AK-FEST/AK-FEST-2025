@@ -321,7 +321,8 @@ html {
 
 @media (max-width: 768px) {
     .hamburger-menu {
-        display: flex; /* Tampilkan hamburger di layar kecil */
+        display: flex; /* Pastikan hamburger menu ditampilkan pada perangkat kecil */
+        position: relative; /* Pastikan posisi hamburger menu sudah benar */
     }
     
     .menu {
@@ -333,8 +334,6 @@ html {
         right: 0;
         width: 100%; /* Lebar penuh untuk layar kecil */
         z-index: 1000;
-        margin: 0;
-        padding: 0;
     }
     
     .menu.active {
