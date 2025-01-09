@@ -320,9 +320,13 @@ html {
 }
 
 @media (max-width: 768px) {
+    nav {
+        left: 0;
+        padding: 0;
+        margin: 0;
+    }
     .hamburger-menu {
         display: flex; /* Pastikan hamburger menu ditampilkan pada perangkat kecil */
-        position: relative; /* Pastikan posisi hamburger menu sudah benar */
     }
     
     .menu {
