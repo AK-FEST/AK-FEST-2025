@@ -304,14 +304,13 @@ html {
 }
 
 .hamburger {
-    display: none;
+    display: none; /* Default untuk desktop */
     flex-direction: column;
-    gap: 5px;
     cursor: pointer;
-    width: 30px;
-    height: 30px;
-    justify-content: space-between;
-    align-items: center;
+    position: absolute; /* Agar bisa diatur posisinya secara bebas */
+    right: 20px; /* Jarak dari tepi kanan */
+    top: 50%; /* Posisikan di tengah vertikal */
+    transform: translateY(-50%); /* Pastikan elemen berada tepat di tengah */
 }
 
 .hamburger span {
@@ -321,9 +320,44 @@ html {
 }
 
 @media (max-width: 768px) {
+    .hamburger {
+        display: flex; /* Tampilkan hamburger di layar kecil */
+    }
+    
+    .menu {
+        display: none; /* Default: sembunyikan menu */
+        flex-direction: column;
+        background: rgb(124, 26, 124);
+        position: absolute;
+        top: 80px; /* Posisi di bawah header */
+        right: 0;
+        width: 100%; /* Lebar penuh untuk layar kecil */
+        z-index: 1000;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .menu.active {
+        display: flex; /* Tampilkan menu saat aktif */
+    }
+    
+     nav ul {
+        flex-direction: column; /* Susunan vertikal untuk menu */
+        text-align: center;
+    }
+
+    nav ul li {
+        width: 100%; /* Menu navigasi memenuhi layar */
+    }
+
+    nav ul li a {
+        padding: 5px 0; /* Tambahkan jarak vertikal antar item */
+    }
+    
     .image {
         margin-bottom: 20px; /* Mengurangi jarak bawah elemen dengan class image */
         margin-top: 90px;
+        height:30vh;
     }   /* Gambar pada section image */
     
     .image img {
