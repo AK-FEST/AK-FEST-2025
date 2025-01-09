@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -8,7 +8,7 @@
 body {
     margin: 0px;
     padding: 0px;
-    font-family: 'Open Sans',sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .wrapper {
@@ -39,19 +39,13 @@ nav {
     top: 0;
     z-index: 10;
     line-height: 80px;
-    transition: background 0.3s ease, box-shadow 0.3s ease;
-    background: transparent;
-}
-
-nav.scrolled {
-    background: rgb(124, 26, 124); /* Black background after scrolling */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: rgb(124, 26, 124); /* Solid background */
 }
 
 nav ul {
     list-style-type: none;
     display: flex;
-    gap: 20px
+    gap: 20px;
 }
 
 nav ul li {
@@ -63,7 +57,6 @@ nav ul li a {
     font-weight: bold;
     text-align: center;
     padding: 0px 16px;
-    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
@@ -329,6 +322,10 @@ html {
 /* Media query untuk perangkat dengan lebar layar 600px atau lebih kecil (handphone) */
 @media screen and (max-width: 600px) {
     /* Gaya untuk header */
+    nav {
+        transition: none; /* Hapus transisi untuk header */
+    }
+
     .logo a {
         font-size: 30px; /* Lebih kecil di layar kecil */
     }
@@ -350,53 +347,6 @@ html {
     nav ul li a {
         font-size: 18px; /* Menyesuaikan ukuran font untuk menu di perangkat kecil */
         padding: 10px 15px;
-    }
-
-    /* Gambar pada section image */
-    .image {
-        margin-top: 80px; /* Tambahkan jarak untuk berada di bawah header */
-    }
-
-    /* Perubahan pada wrapper dan layout gambar */
-    #perlombaan .wrapper {
-        flex-direction: column; /* Gambar ditampilkan secara vertikal */
-        align-items: center; /* Gambar ditempatkan di tengah */
-    }
-
-    #perlombaan .wrapper img {
-        width: 100%; /* Gambar mengambil seluruh lebar kontainer */
-        height: auto; /* Menjaga rasio aspek */
-        margin-bottom: 15px; /* Memberikan jarak antar gambar */
-    }
-
-    /* Dokumentasi slider */
-    .slider {
-        flex-direction: column; /* Slider ditampilkan secara vertikal */
-        align-items: center; /* Gambar di tengah */
-    }
-
-    .slide img {
-        height: auto; /* Gambar mengikuti rasio aspek */
-        width: 100%; /* Gambar menyesuaikan lebar layar */
-    }
-
-    /* Menyesuaikan ukuran font untuk judul */
-    #perlombaan h2,
-    #Dokumentasi h2 {
-        font-size: 28px; /* Ukuran font lebih kecil */
-    }
-
-    /* Footer */
-    footer {
-        padding: 1rem; /* Memberikan padding yang lebih kecil */
-    }
-
-    footer .social-media {
-        gap: 0.5rem; /* Mengurangi jarak antar icon sosial media */
-    }
-
-    footer .social-media li a {
-        font-size: 14px; /* Ukuran font lebih kecil */
     }
 }
 
