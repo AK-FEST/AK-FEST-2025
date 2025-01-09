@@ -303,7 +303,7 @@ html {
     scroll-behavior: smooth; /* Mengaktifkan smooth scrolling */
 }
 
-.hamburger {
+.hamburger-menu {
     display: none; /* Default untuk desktop */
     flex-direction: column;
     cursor: pointer;
@@ -313,14 +313,14 @@ html {
     transform: translateY(-50%); /* Pastikan elemen berada tepat di tengah */
 }
 
-.hamburger span {
+.hamburger-menu span {
     width: 100%;
     height: 5px;
     background-color: #fff;
 }
 
 @media (max-width: 768px) {
-    .hamburger {
+    .hamburger-menu {
         display: flex; /* Tampilkan hamburger di layar kecil */
     }
     
