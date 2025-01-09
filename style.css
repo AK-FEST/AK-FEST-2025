@@ -66,7 +66,6 @@ nav ul li a {
     transition: color 0.3s ease;
 }
 
-
 nav ul li a:hover {
     text-decoration: underline;
 }
@@ -274,7 +273,6 @@ footer .social-media a:hover {
     object-fit: cover; /* Memastikan gambar tetap terpotong dan proporsional */
 }
 
-
 .prev, .next {
     position: absolute;
     top: 50%;
@@ -349,16 +347,14 @@ html {
         display: flex; /* Tampilkan menu ketika tombol hamburger diklik */
     }
 
-
     nav ul li a {
         font-size: 18px; /* Menyesuaikan ukuran font untuk menu di perangkat kecil */
         padding: 10px 15px;
     }
-    }
 
     /* Gambar pada section image */
-    .image img {
-        height: auto; /* Biarkan gambar menyesuaikan tinggi */
+    .image {
+        margin-top: 80px; /* Tambahkan jarak untuk berada di bawah header */
     }
 
     /* Perubahan pada wrapper dan layout gambar */
